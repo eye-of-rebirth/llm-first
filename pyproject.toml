@@ -1,0 +1,20 @@
+[project]
+name = "llm-first"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "eye_of_rebirth", email = "18396070315@163.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=3.16.2",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+llm-first = "llm_first:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
